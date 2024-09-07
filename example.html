@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Columns</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 30px;
+        }
+        .container {
+            max-width: 10000px;
+            margin: 0 auto;
+        }
+        .box {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .title {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: left;
+        }
+        .columns {
+            display: flex;
+        }
+        .column {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .icon {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        h5 {
+            margin: 10px 0;
+        }
+        p {
+            color: #555;
+        }
+        .cta {
+            margin-top: 15px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .hanging-icons {
+            margin-top: 40px;
+        }
+        .hanging-icons .icon {
+            width: 40px;
+            height: 40px;
+            background-color: #e9ecef;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .hanging-icons .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .hanging-icons .column {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box">
+        <p class="title">Columns with icons</p>
+        <div class="columns">
+            <div class="column">
+                <div class="icon"></div>
+                <h5>Featured title 1</h5>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <a href="#" class="cta">Call to Action ></a>
+            </div>
+            <div class="column">
+                <div class="icon"></div>
+                <h5>Featured title 2</h5>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <a href="#" class="cta">Call to Action ></a>
+            </div>
+            <div class="column">
+                <div class="icon"></div>
+                <h5>Featured title 3</h5>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <a href="#" class="cta">Call to Action ></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="box hanging-icons">
+        <p class="title">Hanging icons</p>
+        <div class="columns">
+            <div class="column">
+                <div class="icon">🔗</div>
+                <h5>Featured title</h5>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <button class="button">Primary button</button>
+            </div>
+            <div class="column">
+                <div class="icon">💻</div>
+                <h5>Featured title</h5>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <button class="button">Primary button</button>
+            </div>
+            <div class="column">
+                <div class="icon">✂️</div>
+                <h5>Featured title</h5>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <button class="button">Primary button</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
